@@ -1,0 +1,374 @@
+body {
+  color: $color-primary-100;
+  background-color: #e5e5e5;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+.h1 {
+  margin-top: 118px;
+  margin-bottom: 32px;
+  color: $color-primary-200;
+}
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  color: $color-secondary-100;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+h3 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: $color-primary-200;
+}
+h4 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+h5 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+h6 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.navbar {
+  &-collapse {
+    flex-grow: 1;
+  }
+  &-collapse {
+    justify-content: end;
+  }
+  &-light &-nav .nav-link {
+    color: $color-primary-200;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  &-light:hover,
+  &-nav:hover,
+  .nav-link:hover {
+    color: $color-primary-100;
+  }
+  &-light:focus,
+  &-nav:focus,
+  .nav-link:focus {
+    color: $color-primary-200;
+  }
+}
+
+.nav {
+  &-icon {
+    fill: $color-primary-200;
+  }
+  &-icon:hover {
+    fill: $color-primary-100;
+  }
+  &-icon:active {
+    fill: $color-primary-200;
+  }
+}
+
+.header {
+  &-hero {
+    background-size: cover;
+    background-image: url(../images/hero.png);
+  }
+  &-text {
+    color: $color-primary-200;
+    width: 23%;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+.btn-1 {
+  color: $color-primary-200;
+  padding: 13px 90px 16px;
+  border: 2px solid $color-primary-200;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 150px;
+  &:hover {
+    color: $color-primary-100;
+    background-color: $color-primary-200;
+  }
+  &:active {
+    color: $color-primary-200;
+    background-color: transparent;
+  }
+  &:disabled {
+    color: $color-primary-200;
+    opacity: 0.4;
+    background-color: transparent;
+    border: 2px solid $color-primary-200 0.4;
+  }
+}
+
+.btn-2 {
+  width: 290px;
+  height: 50px;
+  background-color: $color-primary-300;
+  color: $color-primary-200;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  &:hover {
+    color: $color-primary-300;
+    background-color: transparent;
+    border: 2px solid $color-primary-300;
+  }
+  &:active {
+    background-color: $color-primary-300;
+    color: $color-primary-200;
+    border: 2px solid $color-primary-200;
+  }
+  &:disabled {
+    background-color: $color-primary-300;
+    color: $color-primary-200;
+    border: 2px solid $color-primary-200;
+    opacity: 0.4;
+  }
+}
+
+.btn-3 {
+  width: 190px;
+  height: 50px;
+  background-color: $color-secondary-500;
+  color: $color-primary-100;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 15px;
+  &:hover {
+    color: $color-secondary-500;
+    background-color: $color-primary-100;
+    border: 2px solid $color-secondary-500;
+  }
+  &:active {
+    background-color: $color-secondary-500;
+    color: $color-primary-100;
+    border: 2px solid $color-secondary-500;
+  }
+  &:disabled {
+    background-color: $color-primary-300;
+    color: $color-primary-200;
+    border: 2px solid $color-primary-200;
+    opacity: 0.4;
+  }
+}
+//select
+.form-select {
+  width: 170px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: $color-primary-100;
+}
+select-pure {
+  --select-height: 48px;
+  --select-width: 170px;
+  --border-radius: 15px;
+  --border-width: 1px;
+  --border-color: #fff;
+  --padding: 13px 16px;
+  --background-color: #fff;
+  --color: #000;
+  --hover-background-color: #fff;
+  --hover-color: #df4e3c;
+  --selected-background-color: #fff;
+  --selected-color: #df4e3c;
+  --dropdown-gap: 0;
+  --font-size: 14px;
+  --font-weight: 400;
+  --dropdown-items: 7;
+}
+.select {
+  width: 170px;
+  height: 50px;
+}
+.check {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+//check-box
+.form-check {
+  &-input {
+    border: 1px solid $color-secondary-200;
+  }
+  &-input:checked {
+    background-color: $color-primary-300;
+    border-color: none;
+    color: $color-primary-300;
+    &-text {
+      color: $color-primary-300;
+    }
+    & &-label {
+      color: $color-primary-300;
+    }
+  }
+  .form-check-input:checked + .form-check-label {
+    color: $color-primary-300;
+  }
+  &-input:focus {
+    border-color: none;
+    box-shadow: none;
+    border: 1px solid $color-secondary-200;
+    color: $color-primary-300;
+  }
+}
+
+// cards
+.row {
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+.col {
+  width: 25% !important;
+}
+.card {
+  width: min-content;
+  box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+  &-img-top {
+    width: 300px;
+    height: 200px;
+  }
+  &-body {
+    background-color: $color-secondary-500;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    padding-left: 20px;
+  }
+  &-first-line {
+    margin-bottom: 15px;
+  }
+  &-second-line {
+    margin-bottom: 25px;
+    color: $color-secondary-200;
+  }
+  &-year {
+    color: $color-secondary-200;
+    font-size: 17px;
+  }
+  &-name {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  &:hover {
+    & .card-name {
+      text-decoration: underline;
+    }
+  }
+  &-mileage {
+    color: $color-secondary-200;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  &-automatic {
+    color: $color-secondary-200;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  &-fuel {
+    color: $color-secondary-200;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  &-prise {
+    color: $color-primary-100;
+    font-size: 20px;
+  }
+}
+.vehicle-text {
+  color: $color-primary-200;
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 430px;
+}
+.form-control {
+  width: 500px;
+  height: 50px;
+  border: 1px solid $color-secondary-300;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: $color-primary-100;
+  color: $color-primary-200;
+  font-size: 15px;
+  margin-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  &:focus {
+    border: 1px solid $color-secondary-200;
+    background-color: $color-primary-100;
+    box-shadow: none;
+    color: $color-primary-200;
+    &::placeholder {
+      color: transparent;
+    }
+  }
+  &:invalid {
+    border: 1px solid $color-primary-300;
+  }
+  &:valid {
+    border: 1px solid $color-secondary-700;
+  }
+}
+
+//...........accordion
+.accordion {
+  margin-bottom: 200px;
+  &-item {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  &-button {
+    background-color: transparent;
+    font-size: 20px;
+    color: $color-primary-100;
+    border-color: transparent;
+    border-bottom: 1px solid $color-secondary-400;
+  }
+  &-button:not(.collapsed) {
+    color: $color-primary-100;
+    background-color: transparent;
+  }
+  &-button:focus,
+  &-button:active {
+    border-color: transparent;
+    box-shadow: none;
+  }
+  &-body {
+    background-color: $color-secondary-500;
+    padding: 25px 40px;
+  }
+  &-header {
+    color: $color-primary-300;
+    padding-bottom: 25px;
+  }
+}
+.footer-img {
+  width: 191px;
+  height: 48px;
+}

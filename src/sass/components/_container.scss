@@ -1,0 +1,35 @@
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.container-dark {
+  background-color: $color-primary-100;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container-accordion {
+  padding-left: 300px;
+  padding-right: 300px;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
